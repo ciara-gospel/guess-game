@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-color: rgb(57, 38, 74);
+}
+
+h1 {
+  color: orange;
+  margin-bottom: 2rem;
+  text-align: center;
+  pad: 0.5rem;
+}
+
+.one {
+  color: #ccbcbc;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.but {
+  text-align: center;
+}
+
+.number {
+  padding: 1rem;
+  background-color: transparent;
+  color: #fff;
+  border-color: #b1a2a2;
+  margin-bottom: 1rem;
+}
+
+.third {
+  text-align: center;
+}
+
+.info {
+  padding: 0.5rem;
+  background-color: darkmagenta;
+  color: #fff;
+  border-color: #b1a2a2;
+  margin-bottom: 1rem;
+}
+
+.two {
+  color: orange;
+  text-align: center;
+  margin-bottom: 1rem; 
+}
+
+.second {
+  text-align: center;
+}
+
+span {
+  color: rgb(182, 178, 178);
+  margin-bottom: 1rem; 
+}
