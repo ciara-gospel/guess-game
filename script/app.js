@@ -1,6 +1,10 @@
 //  app.js
 
-const guessNumber = 50
+// const guessNumber = 50
+// we want tot generate a random number within the range of 1 and 100
+const guessNumber = Math.floor(Math.random() * 100) + 1
+
+
 let attempts = 0
 
 const guessInput = document.getElementById('enter')
@@ -13,11 +17,16 @@ const restartButton = document.getElementById('restart')
 guessButton.addEventListener('click', () => {
   const userGuess = parseInt(guessInput.value, 10)
   attempts++
+  if(!userGuess){
+    guessFeedback.textContent = 'Input must not be empty!'
+    return 
+  }
   if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
     guessFeedback.textContent = 'Please enter a number between 1 and 100'
+    return
   }
   if (userGuess === guessNumber) {
-    guessFeedback.textContent = 'congratulation! you guess the number'
+    guessFeedback.textContent = 'congratulation! you guess the number' + guessNumber
     guessButton.disabled = true
     restartButton.style.display = 'inline-block'
   } else if (userGuess < guessNumber) {
