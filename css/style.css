@@ -4,9 +4,26 @@
   padding: 0;
 }
 
+body {
+  background-color: lightblue;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .main {
-  background-color: #432f5a;
-  padding-top: 4rem;
+  background-color: azure;
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 60%;
+  height: 100%;
+  padding-bottom: 1rem;
 }
 
 h1 {
@@ -17,14 +34,25 @@ h1 {
 }
 
 .one {
-  color: #ccbcbc;
+  color: #000;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.but {
-  text-align: center;
+.but input {
+  border-radius: 8px;
+  padding: 10px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  margin: 10px;
+  margin-bottom: 10px;
+  border-color: #000;
 }
+
+
 
 .number {
   padding: 1rem;
@@ -38,12 +66,27 @@ h1 {
   text-align: center;
 }
 
-.info {
+button {
   padding: 0.5rem;
   background-color: darkmagenta;
   color: #fff;
   border-color: #b1a2a2;
   margin-bottom: 1rem;
+  outline: none;
+  border: none;
+  width: 15vh;
+  border-radius: 7px;
+
+}
+
+button:hover {
+  background-color: orange;
+  transition: all 0.5s;
+  transition-delay: 0.3s;
+  width: 18vh;
+  font-size: 18px;
+  color: black;
+
 }
 
 .two {
@@ -54,9 +97,4 @@ h1 {
 
 .second {
   text-align: center;
-}
-
-span {
-  color: #ccbcbc;
-  margin-bottom: 1rem;
 }
