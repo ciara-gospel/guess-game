@@ -52,8 +52,6 @@ h1 {
   border-color: #000;
 }
 
-
-
 .number {
   padding: 1rem;
   background-color: transparent;
@@ -76,7 +74,6 @@ button {
   border: none;
   width: 15vh;
   border-radius: 7px;
-
 }
 
 button:hover {
@@ -86,7 +83,6 @@ button:hover {
   width: 18vh;
   font-size: 18px;
   color: black;
-
 }
 
 .two {

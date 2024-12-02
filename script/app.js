@@ -11,32 +11,31 @@ const restartButton = document.getElementById('restart')
 
 // GuessButton Function
 guessButton.addEventListener('click', () => {
-    const userGuess = parseInt(guessInput.value, 10)
-    attempts++
-    if(isNaN (userGuess) || userGuess < 1 || userGuess > 100) {
-        guessFeedback.textContent = 'Please enter a number between 1 and 100'
-    }
-    if (userGuess === guessNumber) {
-        guessFeedback.textContent = 'congratulation! you guess the number'
-        guessButton.disabled = true
-        restartButton.style.display = 'inline-block'
-    } else if (userGuess < guessNumber) {
-        guessFeedback.textContent = 'Too Low!'
-    } else {
-        guessFeedback.textContent = 'Too High!'
-    }
-    
-    attemptsDisplay.textContent = `Attempts: ${attempts}`
-    guessInput.value = ''
+  const userGuess = parseInt(guessInput.value, 10)
+  attempts++
+  if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+    guessFeedback.textContent = 'Please enter a number between 1 and 100'
+  }
+  if (userGuess === guessNumber) {
+    guessFeedback.textContent = 'congratulation! you guess the number'
+    guessButton.disabled = true
+    restartButton.style.display = 'inline-block'
+  } else if (userGuess < guessNumber) {
+    guessFeedback.textContent = 'Too Low!'
+  } else {
+    guessFeedback.textContent = 'Too High!'
+  }
+ 
+  attemptsDisplay.textContent = `Attempts: ${attempts}`
+  guessInput.value = ''
 })
 
 // retstart function
 restartButton.addEventListener('click', () => {
-    attempts = 0
-    guessFeedback.textContent = ''
-    attemptsDisplay.textContent = ''
-    restartButton.style.display = 'none'
-    guessInput.value = ''
-    guessButton.disabled = false
-
+  attempts = 0
+  guessFeedback.textContent = ''
+  attemptsDisplay.textContent = ''
+  restartButton.style.display = 'none'
+  guessInput.value = ''
+  guessButton.disabled = false
 })
