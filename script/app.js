@@ -24,6 +24,7 @@ guessButton.addEventListener('click', () => {
     guessFeedback.textContent = 'Game over'
     guessButton.disabled = true
     restartButton.style.display = 'inline-block'
+    return
   }
   if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
     guessFeedback.textContent = 'Please enter a number between 1 and 100'
