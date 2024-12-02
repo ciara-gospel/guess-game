@@ -25,7 +25,7 @@ guessButton.addEventListener('click', () => {
   } else {
     guessFeedback.textContent = 'Too High!'
   }
- 
+
   attemptsDisplay.textContent = `Attempts: ${attempts}`
   guessInput.value = ''
 })
