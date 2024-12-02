@@ -16,9 +16,9 @@ const restartButton = document.getElementById('restart')
 guessButton.addEventListener('click', () => {
   const userGuess = parseInt(guessInput.value, 10)
   attempts++
-  if (!userGuess){
+  if (!userGuess) {
     guessFeedback.textContent = 'Input must not be empty!'
-   return 
+    return
   }
   if (attempts === 5) {
     guessFeedback.textContent = 'Game over'
